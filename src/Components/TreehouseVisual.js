@@ -1,10 +1,9 @@
 import React, { useState, useEffect } from 'react';
-import { PieChart, Pie, Cell, Legend } from 'recharts';
+import { Card } from 'react-bootstrap';
+// import { PieChart, Pie, Cell, Legend } from 'recharts';
 
 const TreehouseVisual = () => {
     const [data, setData] = useState(null);
-    const [points, setPoints] = useState([]);
-    const [activeIndex, setActiveIndex] = useState(0);
 
     useEffect(() => {
         fetch('https://teamtreehouse.com/kylejohnson3.json')
@@ -41,37 +40,19 @@ const TreehouseVisual = () => {
 
     if (data) {
         const returnedData = convertObjectToArray(data.points);
+        const badges = data.badges.map((badge, index) => (
+            <Card style={{ width: "10rem" }} key={index}>
+                <Card.Img variant="bottom" src={badge.icon_url} />
+                <Card.Body>
+                    <Card.Title>{badge.name}</Card.Title>
+                </Card.Body>
+            </Card>
+        ));
 
         return (
-            <PieChart width={730} height={350}>
-                {/*
-                <Pie 
-                    data={returnedData} 
-                    dataKey="value" 
-                    nameKey="name" 
-                    cx="50%" 
-                    cy="50%" 
-                    outerRadius={50} 
-                    fill="#8884d8" 
-                />
-                */}
-                <Pie 
-                    data={returnedData} 
-                    dataKey="value" 
-                    nameKey="name" 
-                    cx="50%" 
-                    cy="50%" 
-                    innerRadius={40} 
-                    outerRadius={100} 
-                    fill="#82ca9d"  
-                    label
-                >
-                    {returnedData.map((entry, index) => (
-                        <Cell key={`cell-${index}`} fill={COLORS[index % COLORS.length]} />
-                    ))}
-                </Pie>
-                <Legend />
-            </PieChart>
+            <React.Fragment>
+                {badges}
+            </React.Fragment>
         );
     } else {
         return null;
