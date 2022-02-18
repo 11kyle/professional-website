@@ -23,8 +23,9 @@ import { faCode } from '@fortawesome/free-solid-svg-icons';
 
 function Skills() {
     return (
-        <section>
-            <Row className='justify-content-center' id="skills" style={{ height: "100vh" }}>
+        <section style={{ height: "100vh"}} id="skills">
+            <Row className='justify-content-center'>
+                <h1 className="display-6" style={{ marginTop: "100px"}}>Skills</h1>
                 <Card style={{ width: '18rem' }}>
                     <FontAwesomeIcon icon={faReact} size="5x" style={{ color: "#000" }} />
                     <Card.Body>

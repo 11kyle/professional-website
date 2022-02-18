@@ -48,11 +48,13 @@ export default function Navigation() {
                 </MDBTabsItem>
             </MDBTabs>
 
+            {/*
             <MDBTabsContent>
                 <MDBTabsPane show={basicActive === 'tab1'}>Tab 1 content</MDBTabsPane>
                 <MDBTabsPane show={basicActive === 'tab2'}>Tab 2 content</MDBTabsPane>
                 <MDBTabsPane show={basicActive === 'tab3'}>Tab 3 content</MDBTabsPane>
             </MDBTabsContent>
+            */}
         </>
     );
 }

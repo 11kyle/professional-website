@@ -3,9 +3,13 @@ import BlogPost from './BlogPost';
 
 function Blog() {
     return (
-        <Row id="blog" style={{ height: "100vh" }}>
-            <BlogPost />
-        </Row>
+        <section style={{ height: "100vh" }} id="blog">
+            <Row>
+                <h1 className='display-6' style={{ marginTop: "100px"}}>Blog</h1>
+                <BlogPost />
+            </Row>
+        </section>
+        
     );
 }
 

@@ -3,16 +3,19 @@ import { Col } from 'react-bootstrap';
 function BlogPost() {
     return (
         <>
-        <h1 className='display-6'>Converting components: class to function</h1>
-        <p>useEffect replaces component DidMount, componentDidUpdate and componentWillUnmount</p>
-        <p>useState replaces this.state</p>
-
-        <h1 className='display-6'>How to convert an objects to an array</h1>
-        <p>Collect all the keys with Object.keys(obj);</p>
-        <p>Collect all the values with Object.values(obj);</p>
-        <p>Loop through one of the new arrays (propertyNames or propertyValues)</p>
-        <p>Add the converted object to the converted array</p>
-        <p>convertedArray.push(convertedObject);</p>
+            <div>
+                <h1 className='display-6'>Converting components: class to function</h1>
+                <p>useEffect replaces component DidMount, componentDidUpdate and componentWillUnmount</p>
+                <p>useState replaces this.state</p>
+            </div>
+            <div>
+                <h1 className='display-6'>How to convert an objects to an array</h1>
+                <p>Collect all the keys with Object.keys(obj);</p>
+                <p>Collect all the values with Object.values(obj);</p>
+                <p>Loop through one of the new arrays (propertyNames or propertyValues)</p>
+                <p>Add the converted object to the converted array</p>
+                <p>convertedArray.push(convertedObject);</p>
+            </div>
         </>
     );
 }
