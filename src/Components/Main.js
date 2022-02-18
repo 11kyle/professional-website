@@ -6,7 +6,7 @@ import { faLinkedin, faGithub } from '@fortawesome/free-brands-svg-icons';
 function Main() {
     return (
         <section>
-            <Row style={{ height: "100vh" }} className="text-center align-items-center">
+            <Row style={{ height: "100vh" }} className="text-center align-items-center" id="home">
                 <Col >
                     <Image roundedCircle src={ProfilePicture} style={{ width: "200px" }} />
                     <h1 className='display-1'>Kyle Johnson</h1>

@@ -8,31 +8,42 @@ import {
 } from 'mdb-react-ui-kit';
 
 export default function Navigation() {
-    const [basicActive, setBasicActive] = useState('tab1');
+    const [basicActive, setBasicActive] = useState('home');
 
     const handleBasicClick = (value) => {
-        if (value === basicActive) {
-            return;
+        switch (value) {
+            case 'home':
+                document.getElementById('home').scrollIntoView();
+                break;
+            case 'skills':
+                document.getElementById('skills').scrollIntoView();
+                break;
+            case 'blog':
+                document.getElementById('blog').scrollIntoView();
+                break;
+            default:
+                break;
         }
+        
         setBasicActive(value);
     };
 
     return (
         <>
-            <MDBTabs pills className="justify-content-center">
+            <MDBTabs pills className="justify-content-center fixed-top bg-dark">
                 <MDBTabsItem>
-                    <MDBTabsLink onClick={() => handleBasicClick('tab1')} active={basicActive === 'tab1'} >
-                        Tab 1
+                    <MDBTabsLink className="text-light" onClick={() => handleBasicClick('home')} active={basicActive === 'tab1'} >
+                        Home
                     </MDBTabsLink>
                 </MDBTabsItem>
                 <MDBTabsItem>
-                    <MDBTabsLink onClick={() => handleBasicClick('tab2')} active={basicActive === 'tab2'}>
-                        Tab 3
+                    <MDBTabsLink className="text-light" onClick={() => handleBasicClick('skills')} active={basicActive === 'tab2'}>
+                        Skills
                     </MDBTabsLink>
                 </MDBTabsItem>
                 <MDBTabsItem>
-                    <MDBTabsLink onClick={() => handleBasicClick('tab3')} active={basicActive === 'tab3'}>
-                        Tab 4
+                    <MDBTabsLink className="text-light" onClick={() => handleBasicClick('blog')} active={basicActive === 'tab3'}>
+                        Blog
                     </MDBTabsLink>
                 </MDBTabsItem>
             </MDBTabs>

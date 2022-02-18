@@ -3,7 +3,7 @@ import BlogPost from './BlogPost';
 
 function Blog() {
     return (
-        <Row>
+        <Row id="blog" style={{ height: "100vh" }}>
             <BlogPost />
         </Row>
     );
