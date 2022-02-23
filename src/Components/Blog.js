@@ -1,13 +1,13 @@
-import { Row } from 'react-bootstrap';
+import { MDBRow } from 'mdb-react-ui-kit';
 import BlogPost from './BlogPost';
 
 function Blog() {
     return (
         <section style={{ height: "100vh" }} id="blog">
-            <Row>
-                <h1 className='display-6' style={{ marginTop: "100px"}}>Blog</h1>
+            <MDBRow>
+                <h1 className='display-6' style={{ marginTop: "75px"}}>Blog</h1>
                 <BlogPost />
-            </Row>
+            </MDBRow>
         </section>
         
     );

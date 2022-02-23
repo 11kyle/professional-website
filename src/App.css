@@ -1,1 +1,92 @@
+.card:hover {
+    background-color: rgb(75, 75, 75);
+    color:white;
+}
 
+.blinking-cursur:after {
+    content: '|';
+    animation: blink 1s step-start infinite;
+}
+
+@keyframes blink {
+    50% {
+        opacity: 0;
+    }
+}
+
+
+.full-vh {
+    height: 100vh;
+}
+
+.center-inline {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.center-vertical {
+    display: flex;
+    justify-content: center;
+}
+.center-horizontal {
+    display: flex;
+    align-items: center;
+}
+
+.rounded-circle {
+    border-radius: 50%;
+}
+
+.color-main {
+    color: #E36B4C;
+}
+.color-main:hover {
+    color: #000
+}
+.color-secondary-background {
+    background-color: #EEEEEE;
+}
+.down-chevron {
+    position: relative;
+    top: -100px;
+    animation: bounce 1s ease infinite;
+}
+
+
+.text-center {
+    text-align: center;
+}
+
+.card {
+    width: 200px;
+}
+
+.m {
+    margin: 0;
+}
+
+.mr-4 {
+    margin-right: 4px;
+}
+.ml-4 {
+    margin-left: 4px;
+}
+.py-6 {
+    padding-top: 16px;
+    padding-bottom: 16px;
+}
+
+
+/* animations */
+@keyframes bounce {
+    0% {
+        transform: translateY(-10%);
+    }
+    50% {
+        transform: translateY(10%);
+    }
+    100% {
+        transform: translateY(-10%);
+    }
+}

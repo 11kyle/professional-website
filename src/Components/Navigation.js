@@ -3,8 +3,6 @@ import {
     MDBTabs,
     MDBTabsItem,
     MDBTabsLink,
-    MDBTabsContent,
-    MDBTabsPane
 } from 'mdb-react-ui-kit';
 
 export default function Navigation() {
@@ -47,14 +45,6 @@ export default function Navigation() {
                     </MDBTabsLink>
                 </MDBTabsItem>
             </MDBTabs>
-
-            {/*
-            <MDBTabsContent>
-                <MDBTabsPane show={basicActive === 'tab1'}>Tab 1 content</MDBTabsPane>
-                <MDBTabsPane show={basicActive === 'tab2'}>Tab 2 content</MDBTabsPane>
-                <MDBTabsPane show={basicActive === 'tab3'}>Tab 3 content</MDBTabsPane>
-            </MDBTabsContent>
-            */}
         </>
     );
 }

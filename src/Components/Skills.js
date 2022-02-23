@@ -16,47 +16,81 @@
 //    Responsive Layouts
 //    Sass
 
-import { Row, Card, ListGroup, ListGroupItem } from 'react-bootstrap';
+import { MDBRow, MDBCard, MDBCardBody, MDBCardTitle, MDBCardText } from 'mdb-react-ui-kit';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faReact, faJsSquare } from '@fortawesome/free-brands-svg-icons';
+import { faReact, faJsSquare, faHtml5, faCss3Alt } from '@fortawesome/free-brands-svg-icons';
 import { faCode } from '@fortawesome/free-solid-svg-icons';
 
 function Skills() {
     return (
+        <>
+        <section className='center-vertical'>
+            <div className='center-inline text-center'>
+                <div className='card'>
+                    <FontAwesomeIcon icon={faReact} size="5x" className="mt-2" />
+                    <p>React</p>
+                </div>
+                <div className='card'>
+                    <FontAwesomeIcon icon={faJsSquare} size="5x" className="mt-2" />
+                    <p>JavaScript</p>
+                </div>
+                <div className='card'>
+                    <FontAwesomeIcon icon={faHtml5} size="5x" className="mt-2" />
+                    <p>HTML &amp; CSS</p>
+                </div>
+                <div className='card'>
+                    <FontAwesomeIcon icon={faCss3Alt} size="5x" className="mt-2" />
+                    <p>HTML &amp; CSS</p>
+                </div>
+            </div>
+        </section>
+
+        {/*
         <section style={{ height: "100vh"}} id="skills">
-            <Row className='justify-content-center'>
-                <h1 className="display-6" style={{ marginTop: "100px"}}>Skills</h1>
-                <Card style={{ width: '18rem' }}>
-                    <FontAwesomeIcon icon={faReact} size="5x" style={{ color: "#000" }} />
-                    <Card.Body>
-                        <Card.Title>React</Card.Title>
-                        <Card.Text>
+            <MDBRow className="justify-content-center">
+                <h1 className="display-6" style={{ marginTop: "75px"}}>Skills</h1>
+                <MDBCard 
+                    style={{ width: '18rem' }}
+                    className="m-2"
+                >
+                    <FontAwesomeIcon icon={faReact} size="5x" className="mt-2" />
+                    <MDBCardBody>
+                        <MDBCardTitle>React</MDBCardTitle>
+                        <MDBCardText>
                         React allows me to build an app in an easy to understand way. Combining components 
                          to create powerful, fast web apps.
-                        </Card.Text>
-                    </Card.Body>
-                </Card>
-                <Card style={{ width: '18rem' }}>
-                    <FontAwesomeIcon icon={faJsSquare} size="5x" />
-                    <Card.Body>
-                        <Card.Title>JavaScript</Card.Title>
-                        <Card.Text>
+                        </MDBCardText>
+                    </MDBCardBody>
+                </MDBCard>
+                <MDBCard 
+                    style={{ width: '18rem' }}
+                    className="m-2"
+                >
+                    <FontAwesomeIcon icon={faJsSquare} size="5x" className="mt-2" />
+                    <MDBCardBody>
+                        <MDBCardTitle>JavaScript</MDBCardTitle>
+                        <MDBCardText>
                         JavaScript is used to turn static pages into interactive apps. Needed to execute API 
                         calls, update the DOM and add additional animations.
-                        </Card.Text>
-                    </Card.Body>
-                </Card>
-                <Card style={{ width: '18rem' }}>
-                    <FontAwesomeIcon icon={faCode} size="5x" />
-                    <Card.Body>
-                        <Card.Title>Front-End Development</Card.Title>
-                        <Card.Text>
+                        </MDBCardText>
+                    </MDBCardBody>
+                </MDBCard>
+                <MDBCard 
+                    style={{ width: '18rem' }}
+                    className="m-2"
+                >
+                    <FontAwesomeIcon icon={faCode} size="5x" className="mt-2" />
+                    <MDBCardBody>
+                        <MDBCardTitle>Front-End Development</MDBCardTitle>
+                        <MDBCardText>
                         Using a mobile-first approach to produce responsive layouts.
-                        </Card.Text>
-                    </Card.Body>
-                </Card>
-            </Row>
+                        </MDBCardText>
+                    </MDBCardBody>
+                </MDBCard>
+            </MDBRow>
         </section>
+        */}
+        </>
     );
 }
 
