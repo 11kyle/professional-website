@@ -16,7 +16,6 @@
 //    Responsive Layouts
 //    Sass
 
-import { MDBRow, MDBCard, MDBCardBody, MDBCardTitle, MDBCardText } from 'mdb-react-ui-kit';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faReact, faJsSquare, faHtml5, faCss3Alt } from '@fortawesome/free-brands-svg-icons';
 import { faCode } from '@fortawesome/free-solid-svg-icons';

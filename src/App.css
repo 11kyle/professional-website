@@ -56,7 +56,7 @@
     color: #000
 }
 .color-secondary-background {
-    background-color: #EEEEEE;
+    background-color: #F7F7F7;
 }
 .down-chevron {
     position: relative;
@@ -75,6 +75,7 @@
 
 .card {
     width: 200px;
+    box-shadow: 2px 2px 3px #444;
 }
 
 .m {
@@ -92,6 +93,41 @@
 .py-6 {
     padding-top: 16px;
     padding-bottom: 16px;
+}
+.button-icon {
+    padding: 2px;
+    background-color: #FFF;
+    border-radius: 8%;
+    box-shadow: 1px 1px 1px 1px #444;
+}
+
+/* sidebar nav */
+.side-nav {
+    width: 80px;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: #E36B4C;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.nav {
+    display: flex;
+}
+.nav-list {
+    list-style: none;
+    padding-left: 0;
+}
+.nav-item {
+}
+.nav-link {
+    display: block;
+    color: #FFF;
+}
+.nav-link:hover {
+    color: #444;
 }
 
 
