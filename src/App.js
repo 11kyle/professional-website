@@ -2,19 +2,21 @@ import React, { useState, useEffect } from 'react';
 import { Routes, Route, useLocation } from 'react-router-dom';
 import Main from './Components/Main';
 import Skills from './Components/Skills';
+import FullstackCylce from './Components/FullstackCycle';
 import Blog from './Components/Blog';
 import Navigation from './Components/Navigation';
 import Terminal from './Components/Terminal';
 import ProfilePicture from './Images/man.png';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faLinkedin, faGithub } from '@fortawesome/free-brands-svg-icons';
-import { faChevronDown } from '@fortawesome/free-solid-svg-icons';
+import { faChevronDown, faDatabase, faDesktop, faServer } from '@fortawesome/free-solid-svg-icons';
 
 import {
     MDBContainer
 } from 'mdb-react-ui-kit';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './App.css';
+
 
 function App() {
     return (
@@ -35,9 +37,10 @@ function App() {
                 </div>
             </main>
             <div className='text-center down-chevron'>
-                <a className='color-main' href='#'><FontAwesomeIcon icon={faChevronDown} size="3x" /></a>
+                <FontAwesomeIcon className='color-main' icon={faChevronDown} size="3x" />
             </div> 
-            <Skills />
+            {/*<Skills />*/}
+            <FullstackCylce />
         </>
     );
 }

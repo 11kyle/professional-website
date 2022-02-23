@@ -24,6 +24,17 @@
     flex-direction: row;
     align-items: center;
 }
+/* offset */
+.flex-offset {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+.offset {
+    position: relative;
+    top: 200px;
+}
 
 .center-vertical {
     display: flex;
@@ -52,6 +63,10 @@
     top: -100px;
     animation: bounce 1s ease infinite;
 }
+.arrow {
+    position: relative;
+    top: -120px;
+}
 
 
 .text-center {
@@ -65,7 +80,9 @@
 .m {
     margin: 0;
 }
-
+.mt-10 {
+    margin-top: 30px;
+}
 .mr-4 {
     margin-right: 4px;
 }
@@ -89,4 +106,9 @@
     100% {
         transform: translateY(-10%);
     }
+}
+
+/* media queries */
+@media (min-width: 765px) {
+    
 }
